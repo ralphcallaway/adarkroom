@@ -4,22 +4,22 @@
 var Outside = {
 	name: "Outside",
 	
-	_GATHER_DELAY: 60,
-	_TRAPS_DELAY: 90,
+	_GATHER_DELAY: 10,
+	_TRAPS_DELAY: 15,
 	_POP_DELAY: [0.5, 3],
 	
 	_INCOME: {
 		'gatherer': {
 			delay: 10,
 			stores: {
-				'wood': 1
+				'wood': 10
 			}
 		},
 		'hunter': {
 			delay: 10,
 			stores: {
-				'fur': 0.5,
-				'meat': 0.5
+				'fur': 2,
+				'meat': 2
 			}
 		},
 		'trapper': {
@@ -32,16 +32,16 @@ var Outside = {
 		'tanner': {
 			delay: 10,
 			stores: {
-				'fur': -5,
-				'leather': 1
+				'fur': -3,
+				'leather': 2
 			}
 		},
 		'charcutier': {
 			delay: 10,
 			stores: {
-				'meat': -5,
-				'wood': -5,
-				'cured meat': 1
+				'meat': -1,
+				'wood': -1,
+				'cured meat': 2
 			}
 		},
 		'iron miner': {
@@ -95,12 +95,12 @@ var Outside = {
 			message: 'bits of meat'
 		},
 		{
-			rollUnder: 0.85,
+			rollUnder: 1.85,
 			name: 'scales',
 			message: 'strange scales'
 		},
 		{
-			rollUnder: 0.93,
+			rollUnder: 2.93,
 			name: 'teeth',
 			message: 'scattered teeth'
 		},
@@ -110,7 +110,7 @@ var Outside = {
 			message: 'tattered cloth'
 		},
 		{
-			rollUnder: 1.0,
+			rollUnder: 3.0,
 			name: 'charm',
 			message: 'a crudely made charm'
 		}
